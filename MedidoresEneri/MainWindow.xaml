@@ -1,0 +1,101 @@
+﻿<Window x:Class="MedidoresEneri.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MedidoresEneri"
+        mc:Ignorable="d"
+        Title="Carga Medidores en Dispositivo" Height="802.016" Width="941.202">
+
+    <Grid>
+
+        <ScrollViewer Margin="10,20,10,0">
+            <Grid>
+                <Grid.Background>
+                    <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="#FF1012A8" Offset="0.892"/>
+                        <GradientStop Color="#FFFEFEFE" Offset="0.137"/>
+                        <GradientStop Color="#FF3C44F1" Offset="0.288"/>
+                    </LinearGradientBrush>
+                </Grid.Background>
+                <ComboBox x:Name="cboPuerto" HorizontalAlignment="Left" Margin="77,289,0,0" VerticalAlignment="Top" Width="146" FontSize="28" Height="49" SelectionChanged="CboPuerto_SelectionChanged">
+                </ComboBox>
+                <Image HorizontalAlignment="Left" Height="103" VerticalAlignment="Top" Width="106" Source="img/descarga.png" Margin="77,135,0,0"/>
+                <Image HorizontalAlignment="Left" Height="84" VerticalAlignment="Top" Width="224" Source="img/cfe.jpg" Margin="10,22,0,0"/>
+                <Image HorizontalAlignment="Left" Height="74" Margin="633,22,0,0" VerticalAlignment="Top" Width="298" Source="img/Orkan.jpeg"/>
+                <Image x:Name="Medidor1" HorizontalAlignment="Left" Height="63" Margin="333,39,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor13" HorizontalAlignment="Left" Height="63" Margin="489,39,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor2" HorizontalAlignment="Left" Height="63" Margin="334,99,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor14" HorizontalAlignment="Left" Height="63" Margin="489,99,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor3" HorizontalAlignment="Left" Height="63" Margin="334,157,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor15" HorizontalAlignment="Left" Height="63" Margin="489,157,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor4" HorizontalAlignment="Left" Height="63" Margin="334,217,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor16" HorizontalAlignment="Left" Height="63" Margin="489,217,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor5" HorizontalAlignment="Left" Height="63" Margin="333,278,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor17" HorizontalAlignment="Left" Height="63" Margin="489,278,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor6" HorizontalAlignment="Left" Height="63" Margin="333,336,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor18" HorizontalAlignment="Left" Height="63" Margin="489,336,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor7" HorizontalAlignment="Left" Height="63" Margin="333,396,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor19" HorizontalAlignment="Left" Height="63" Margin="489,396,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor8" HorizontalAlignment="Left" Height="63" Margin="333,456,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor20" HorizontalAlignment="Left" Height="63" Margin="489,456,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor9" HorizontalAlignment="Left" Height="63" Margin="334,515,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor21" HorizontalAlignment="Left" Height="63" Margin="489,512,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor10" HorizontalAlignment="Left" Height="63" Margin="334,575,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor22" HorizontalAlignment="Left" Height="63" Margin="489,575,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor11" HorizontalAlignment="Left" Height="63" Margin="334,632,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor23" HorizontalAlignment="Left" Height="63" Margin="489,632,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor12" HorizontalAlignment="Left" Height="63" Margin="333,692,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+                <Image x:Name="Medidor24" HorizontalAlignment="Left" Height="63" Margin="489,692,0,0" VerticalAlignment="Top" Width="123" Source="img/Eneri1.jpeg" RenderTransformOrigin="0.136,0.071" Opacity="0.3" Visibility="Hidden"/>
+
+                <Label Content="Puerto COM" HorizontalAlignment="Left" Margin="75,239,0,0" VerticalAlignment="Top" Height="50" Width="144" FontSize="22" FontWeight="Bold"/>
+                <Label Content="Numero Medidor y Direccion Electrica " HorizontalAlignment="Left" Margin="261,0,0,0" VerticalAlignment="Top" Height="38" Width="367" FontSize="20" FontWeight="Bold"/>
+                <Button x:Name="btnCarga" Content="CARGA" HorizontalAlignment="Left" Margin="666,499,0,0" VerticalAlignment="Top" Width="220" Height="79" Click="BtnCarga_Click" FontSize="36" Background="#FFEFF1EF"/>
+                <Label Content="Cantidad de Posiciones" HorizontalAlignment="Left" Margin="630,248,0,0" VerticalAlignment="Top" Height="50" Width="264" FontSize="22" FontWeight="Bold"/>
+                <ComboBox x:Name="cboMedidores"  HorizontalAlignment="Left" Margin="696,289,0,0" VerticalAlignment="Top" Width="146" FontSize="40" Height="49" RenderTransformOrigin="1.891,0.762" HorizontalContentAlignment="Center"  SelectionChanged="CboMedidores_SelectionChanged">
+                    <ComboBoxItem>" "</ComboBoxItem>
+
+                    <ComboBoxItem>12</ComboBoxItem>
+                    <ComboBoxItem>24</ComboBoxItem>
+                </ComboBox>
+                <TextBox x:Name="Medidores14" HorizontalAlignment="Left" Margin="466,97,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores14_KeyUp"/>
+                <TextBox x:Name="Medidores2" HorizontalAlignment="Left" Margin="311,97,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores2_KeyUp"/>
+                <TextBox x:Name="Medidores13" HorizontalAlignment="Left" Margin="466,39,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores13_KeyUp"/>
+                <TextBox x:Name="Medidores1" HorizontalAlignment="Left" Margin="311,39,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores1_KeyUp"/>
+                <TextBox x:Name="Medidores16" HorizontalAlignment="Left" Margin="466,217,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores16_KeyUp"/>
+                <TextBox x:Name="Medidores4" HorizontalAlignment="Left" Margin="311,217,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores4_KeyUp"/>
+                <TextBox x:Name="Medidores15" HorizontalAlignment="Left" Margin="466,157,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores15_KeyUp"/>
+                <TextBox x:Name="Medidores3" HorizontalAlignment="Left" Margin="311,157,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores3_KeyUp"/>
+                <TextBox x:Name="Medidores18" HorizontalAlignment="Left" Margin="466,336,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores18_KeyUp"/>
+                <TextBox x:Name="Medidores6" HorizontalAlignment="Left" Margin="311,336,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores6_KeyUp"/>
+                <TextBox x:Name="Medidores17" HorizontalAlignment="Left" Margin="466,278,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores17_KeyUp"/>
+                <TextBox x:Name="Medidores5" HorizontalAlignment="Left" Margin="311,278,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores5_KeyUp"/>
+                <TextBox x:Name="Medidores20" HorizontalAlignment="Left" Margin="466,456,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores20_KeyUp"/>
+                <TextBox x:Name="Medidores8" HorizontalAlignment="Left" Margin="311,456,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores8_KeyUp"/>
+                <TextBox x:Name="Medidores19" HorizontalAlignment="Left" Margin="466,396,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores19_KeyUp"/>
+                <TextBox x:Name="Medidores7" HorizontalAlignment="Left" Margin="311,396,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores7_KeyUp"/>
+                <TextBox x:Name="Medidores21" HorizontalAlignment="Left" Margin="466,516,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores21_KeyUp"/>
+                <TextBox x:Name="Medidores9" HorizontalAlignment="Left" Margin="311,515,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores9_KeyUp"/>
+                <TextBox x:Name="Medidores23" HorizontalAlignment="Left" Margin="466,635,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores23_KeyUp"/>
+                <TextBox x:Name="Medidores11" HorizontalAlignment="Left" Margin="311,635,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores11_KeyUp"/>
+                <TextBox x:Name="Medidores22" HorizontalAlignment="Left" Margin="466,575,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores22_KeyUp"/>
+                <TextBox x:Name="Medidores10" HorizontalAlignment="Left" Margin="311,575,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores10_KeyUp"/>
+                <TextBox x:Name="Medidores24" HorizontalAlignment="Left" Margin="466,695,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores24_KeyUp"/>
+                <TextBox x:Name="Medidores12" HorizontalAlignment="Left" Margin="311,692,0,0" VerticalAlignment="Top" Width="155" Height="60" FontSize="32" Background="{x:Null}" HorizontalContentAlignment="Center" IsEnabled="False" KeyUp="Medidores12_KeyUp"/>
+                <Label Content="Zona" HorizontalAlignment="Left" Margin="112,351,0,0" VerticalAlignment="Top" Height="50" Width="73" FontSize="22" FontWeight="Bold"/>
+                <ComboBox x:Name="cboZona" HorizontalAlignment="Left" Margin="80,401,0,0" VerticalAlignment="Top" Width="146" FontSize="24" Height="49" RenderTransformOrigin="5.41,-1.527" SelectionChanged="CboZona_SelectionChanged"/>
+                <Label Content="Numero Gabinete" HorizontalAlignment="Left" Margin="60,483,0,0" VerticalAlignment="Top" Height="51" Width="202" FontSize="22" FontWeight="Bold"/>
+                <TextBox x:Name="Gabinete" HorizontalAlignment="Left" Margin="674,401,0,0" VerticalAlignment="Top" Width="202" Height="60" FontSize="32"  HorizontalContentAlignment="Center" KeyUp="Gabinete_KeyUp"/>
+                <Label Content="ID Dispositivo" HorizontalAlignment="Left" Margin="699,346,0,0" VerticalAlignment="Top" Height="50" Width="177" FontSize="22" FontWeight="Bold"/>
+                <TextBox x:Name="GaB" HorizontalAlignment="Left" Margin="32,538,0,0" VerticalAlignment="Top" Width="245" Height="60" FontSize="36"  HorizontalContentAlignment="Center" KeyUp="GaB_KeyUp" />
+                <Label Content="Latitud" HorizontalAlignment="Left" Margin="655,138,0,0" VerticalAlignment="Top" Height="45" Width="88" FontSize="22" FontWeight="Bold"/>
+                <TextBox x:Name="Latitud" HorizontalAlignment="Left" Margin="639,180,0,0" VerticalAlignment="Top" Width="118" Height="60" FontSize="32"  HorizontalContentAlignment="Center" KeyUp="Latitud_KeyUp"/>
+                <Label Content="Longitud" HorizontalAlignment="Left" Margin="792,138,0,0" VerticalAlignment="Top" Height="45" Width="102" FontSize="22" FontWeight="Bold"/>
+                <TextBox x:Name="Longitud" HorizontalAlignment="Left" Margin="784,180,0,0" VerticalAlignment="Top" Width="118" Height="60" FontSize="32"  HorizontalContentAlignment="Center" KeyUp="Longitud_KeyUp"/>
+
+            </Grid>
+
+        </ScrollViewer>
+    </Grid>
+</Window>

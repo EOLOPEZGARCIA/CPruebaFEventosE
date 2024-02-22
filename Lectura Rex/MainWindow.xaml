@@ -1,0 +1,28 @@
+﻿<Window x:Class="Lectura_Rex.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lectura_Rex"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="cboPuerto" HorizontalAlignment="Left" Margin="360,96,0,0" VerticalAlignment="Top" Width="146" FontSize="20" Height="48" />
+        <Image HorizontalAlignment="Left" Height="121" VerticalAlignment="Top" Width="202" Source="img/elster.jfif" Margin="0,10,0,0"/>
+        <Image HorizontalAlignment="Left" Height="99" Margin="560,45,0,0" VerticalAlignment="Top" Width="224" Source="img/cfe.jpg"/>
+        <Image HorizontalAlignment="Left" Height="99" Margin="215,45,0,0" VerticalAlignment="Top" Width="104" Source="img/REX.jpg"/>
+        <Label Content="Puerto COM" HorizontalAlignment="Left" Margin="360,46,0,0" VerticalAlignment="Top" Height="50" Width="144" FontSize="22" FontWeight="Bold"/>
+        <Button x:Name="btnLectura" Content="Lectura" HorizontalAlignment="Left" Margin="302,206,0,0" VerticalAlignment="Top" Width="202" Height="56" Click="BtnLectura_Click" FontSize="36"/>
+        <Button x:Name="btnCorte" Content="Corte" HorizontalAlignment="Left" Margin="32,206,0,0" VerticalAlignment="Top" Width="202" Height="56" Click="BtnCorte_Click" FontSize="36"/>
+        <Button x:Name="btnReconexion" Content="Reconexion" HorizontalAlignment="Left" Margin="562,206,0,0" VerticalAlignment="Top" Width="202" Height="56" Click="BtnReconexion_Click" FontSize="36"/>
+        <TextBox HorizontalAlignment="Left" Height="46" x:Name="Txt_ACT" Margin="256,358,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="36"/>
+        <Label Content="kWh Entregados" HorizontalAlignment="Left" Margin="234,310,0,0" VerticalAlignment="Top" Height="50" Width="190" FontSize="22" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="46" x:Name="Txt_REAC" Margin="432,359,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="36"/>
+        <TextBox HorizontalAlignment="Left" Height="46" x:Name="Txt_MED" Margin="65,360,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="36" RenderTransformOrigin="0.721,0.598"/>
+        <Label Content="Medidor" HorizontalAlignment="Left" Margin="86,311,0,0" VerticalAlignment="Top" Height="44" Width="102" FontSize="22" FontWeight="Bold" RenderTransformOrigin="0.861,0.787"/>
+        <Label Content="kWh Recibidos" HorizontalAlignment="Left" Margin="424,311,0,0" VerticalAlignment="Top" Height="50" Width="171" FontSize="22" FontWeight="Bold"/>
+        <TextBox HorizontalAlignment="Left" Height="46" x:Name="Txt_REL" Margin="600,358,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="36"/>
+        <Label Content="Relevador" HorizontalAlignment="Left" Margin="609,308,0,0" VerticalAlignment="Top" Height="50" Width="126" FontSize="22" FontWeight="Bold"/>
+
+    </Grid>
+</Window>

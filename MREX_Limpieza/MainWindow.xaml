@@ -1,0 +1,30 @@
+﻿<Window x:Class="MREX_Limpieza.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MREX_Limpieza"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="532.957" Width="800">
+    <Grid Margin="0,0,0.333,16.667">
+        <ComboBox x:Name="cboPuerto" HorizontalAlignment="Left" Margin="327,116,0,0" VerticalAlignment="Top" Width="113" FontSize="20" Height="26" />
+        <Image HorizontalAlignment="Left" Height="77" Margin="292,0,0,0" VerticalAlignment="Top" Width="224" Source="img/cfe.jpg"/>
+        <Image HorizontalAlignment="Left" Height="77" VerticalAlignment="Top" Width="109" Source="img/mrex.jpg" Margin="344,161,0,0" Visibility="Visible"/>
+        <RadioButton Content="" Name="RadioBtn_Rex" HorizontalAlignment="Left" Margin="248,193,0,0" VerticalAlignment="Top" Checked="RadioBtn_Rex_Checked" Visibility="Visible"/>
+        <RadioButton Content="" x:Name="RadioBtn_mrex" HorizontalAlignment="Left" Margin="497,193,0,0" VerticalAlignment="Top" Checked="RadioBtn_mrex_Checked" Visibility="Visible"/>
+
+        <Image HorizontalAlignment="Left" Height="77" Margin="152,161,0,0" VerticalAlignment="Top" Width="77" Source="img/REX.jpg" Visibility="Visible"/>
+        <Button x:Name="btnAccion" Content="Accion" HorizontalAlignment="Left" Margin="292,268,0,0" VerticalAlignment="Top" Width="202" Height="56" Click="btnAccion_Click" FontSize="36" Visibility="Visible"/>
+        <TextBox HorizontalAlignment="Left" Height="46" x:Name="Txt_ACT" Margin="248,392,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="36" Visibility="Visible"/>
+        <Label Content="kWh AYER" Name="Lbl_Act" HorizontalAlignment="Left" Margin="265,345,0,0" VerticalAlignment="Top" Height="50" Width="127" FontSize="22" FontWeight="Bold" Visibility="Visible"/>
+        <TextBox HorizontalAlignment="Left" Height="46" x:Name="Txt_REAC" Margin="424,393,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="36" Visibility="Visible"/>
+        <TextBox  HorizontalAlignment="Left" Height="46" x:Name="Txt_MED" Margin="56,394,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="173" FontSize="36" RenderTransformOrigin="0.721,0.598" Visibility="Visible"/>
+        <Label Content="Medidor" Name="Lbl_Med" HorizontalAlignment="Left" Margin="100,342,0,0" VerticalAlignment="Top" Height="44" Width="102" FontSize="22" FontWeight="Bold" RenderTransformOrigin="0.861,0.787" Visibility="Visible"/>
+        <Label Content="kWh HOY" Name="Lbl_Reac" HorizontalAlignment="Left" Margin="424,345,0,0" VerticalAlignment="Top" Height="50" Width="124" FontSize="22" FontWeight="Bold" Visibility="Visible"/>
+        <TextBox HorizontalAlignment="Left" Height="46" x:Name="Txt_REL" Margin="592,392,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="144" FontSize="36" Visibility="Visible"/>
+        <Label Content="Relevador" Name="Lbl_Rel" HorizontalAlignment="Left" Margin="600,342,0,0" VerticalAlignment="Top" Height="50" Width="126" FontSize="22" FontWeight="Bold" Visibility="Visible"/>
+        <Image HorizontalAlignment="Left" Height="59" VerticalAlignment="Top" Width="109" Source="img/NK151.JPG" Margin="553,179,0,0" Visibility="Visible"/>
+        <RadioButton Content="" x:Name="RadioBtn_mrex_nk151" HorizontalAlignment="Left" Margin="691,193,0,0" VerticalAlignment="Top" Checked="RadioBtn_nk151_Checked" Visibility="Visible"/>
+        
+    </Grid>
+</Window>

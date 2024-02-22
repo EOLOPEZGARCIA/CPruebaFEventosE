@@ -1,0 +1,36 @@
+﻿<Window x:Class="Eneri_Traductor.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Eneri_Traductor"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ComboBox x:Name="cboPuerto" HorizontalAlignment="Left" Margin="109,48,0,0" VerticalAlignment="Top" Width="113" FontSize="20" Height="26" />
+        <TextBox HorizontalAlignment="Left" Height="83" Name="Txt_Input" Margin="38,174,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="715" FontSize="16" FontWeight="Bold" TextChanged="Txt_Input_TextChanged"/>
+        <TextBox HorizontalAlignment="Left" Height="83" Name="Txt_Output" Margin="38,341,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="715" FontSize="16"/>
+
+        <TextBox HorizontalAlignment="Left" Height="46" x:Name="Txt_id" Margin="262,27,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="178" FontSize="36" Visibility="Visible"/>
+        <Label Content="Ingrese cadena Eneri de Respuesta con los bytes" HorizontalAlignment="Left" Height="33" Margin="38,136,0,0" VerticalAlignment="Top" Width="362" FontWeight="Bold"/>
+        <Label Content="Resultado" HorizontalAlignment="Left" Height="33" Margin="38,303,0,0" VerticalAlignment="Top" Width="157" FontWeight="Bold"/>
+        <Button Content="Traducir Eneri 2" HorizontalAlignment="Left" Height="48" Margin="262,272,0,0" Name="Btn_Accionar" VerticalAlignment="Top" Width="234" Click="Btn_Accionar_Click" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/eneri.png" Opacity="0.3"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Lectura Eneri 2" HorizontalAlignment="Left" Height="48" Margin="621,25,0,0" x:Name="Btn_Lectura_2" VerticalAlignment="Top" Width="132" Click="Btn_Lectura_2_Click" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/NK151.jpg" Opacity="0.3"/>
+            </Button.Background>
+        </Button>
+        <Button Content="Lectura Eneri 1" HorizontalAlignment="Left" Height="48" Margin="461,26,0,0" x:Name="Btn_Lectura_1" VerticalAlignment="Top" Width="126" Click="Btn_Lectura_1_Click" FontSize="16" FontWeight="Bold">
+            <Button.Background>
+                <ImageBrush ImageSource="/G155.jpg" Opacity="0.3"/>
+            </Button.Background>
+        </Button>
+        <Label Content="Puerto COM" HorizontalAlignment="Left" Height="33" Margin="130,10,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" RenderTransformOrigin="0.562,0.52"/>
+        <Label Content="ID Medidor" HorizontalAlignment="Left" Height="33" Margin="262,7,0,0" VerticalAlignment="Top" Width="78" FontWeight="Bold" RenderTransformOrigin="0.562,0.52"/>
+
+    </Grid>
+</Window>
